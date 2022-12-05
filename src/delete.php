@@ -1,5 +1,5 @@
 <?php
-$connection = new mysqli("localhost","ketabarz_test","ketabarz_test","ketabarz_test") or die("can't connect to".$connection->connect_error);
+$connection = new mysqli("localhost","","","") or die("can't connect to".$connection->connect_error);
 $id = $_POST['id'];
 $name_checker = "SELECT id FROM users WHERE id='$id'";
 $res = $connection->query($name_checker);
